@@ -3,7 +3,6 @@ name: 'Build and Deploy to GKE'
 on: workflow_dispatch
 
 env:
-  GCLOUD_PROJECT: lab-hml
   PROJECT_ID: 'lab-hml' # TODO: update to your Google Cloud project ID
   GAR_LOCATION: 'us-central1' # TODO: update to your region
   GKE_CLUSTER: 'autopilot-cluster-1' # TODO: update to your cluster name
