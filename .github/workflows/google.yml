@@ -3,9 +3,6 @@ name: 'Build and Deploy to GKE'
 on: workflow_dispatch
 
 env:
-  GCLOUD_PROJECT: 'lab-hml'
-  GCP_PROJECT: 'lab-hml'
-  GOOGLE_CLOUD_PROJECT: 'lab-hml'
   PROJECT_ID: 'lab-hml' # TODO: update to your Google Cloud project ID
   GAR_LOCATION: 'us-central1' # TODO: update to your region
   GKE_CLUSTER: 'autopilot-cluster-1' # TODO: update to your cluster name
@@ -39,10 +36,7 @@ jobs:
         with:
           cluster_name: '${{ env.GKE_CLUSTER }}'
           location: '${{ env.GKE_ZONE }}'
-          GCLOUD_PROJECT: 'lab-hml'
-          GCP_PROJECT: 'lab-hml'
-          GOOGLE_CLOUD_PROJECT: 'lab-hml'
-          PROJECT_ID: 'lab-hml' # TODO: update to your Google Cloud project ID
+          project_id: '${{ env.PROJECT_ID }}'
 
       - name: 'Run YAML'
         run: |-
