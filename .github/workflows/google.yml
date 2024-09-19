@@ -39,6 +39,10 @@ jobs:
         with:
           cluster_name: '${{ env.GKE_CLUSTER }}'
           location: '${{ env.GKE_ZONE }}'
+          GCLOUD_PROJECT: 'lab-hml'
+          GCP_PROJECT: 'lab-hml'
+          GOOGLE_CLOUD_PROJECT: 'lab-hml'
+          PROJECT_ID: 'lab-hml' # TODO: update to your Google Cloud project ID
 
       - name: 'Run YAML'
         run: |-
