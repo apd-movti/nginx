@@ -43,6 +43,7 @@ env:
   DEPLOYMENT_NAME: 'nginx' # TODO: update to your deployment name
   REPOSITORY: 'nginx' # TODO: update to your Artifact Registry docker repository name
   IMAGE: 'static-site'
+  GCLOUD_PROJECT: 'lab-hml'
   WORKLOAD_IDENTITY_PROVIDER: 'projects/597747670220/locations/global/workloadIdentityPools/github/providers/my-repo' # TODO: update to your workload identity provider
 
 jobs:
