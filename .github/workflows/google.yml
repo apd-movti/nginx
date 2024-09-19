@@ -10,7 +10,7 @@ env:
   GKE_ZONE: 'us-central1-c' # TODO: update to your cluster zone
   DEPLOYMENT_NAME: 'nginx' # TODO: update to your deployment name
   REPOSITORY: 'nginx' # TODO: update to your Artifact Registry docker repository name
-  WORKLOAD_IDENTITY_PROVIDER: 'projects/597747670220/locations/global/workloadIdentityPools/github/providers/my-repo' # TODO: update to your workload identity provider
+  WORKLOAD_IDENTITY_PROVIDER: 'projects/597747670220/locations/global/workloadIdentityPools/git-actions/providers/github' # TODO: update to your workload identity provider
 
 jobs:
   setup-build-publish-deploy:
