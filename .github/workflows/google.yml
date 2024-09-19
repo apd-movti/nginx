@@ -35,7 +35,7 @@ jobs:
         uses: 'google-github-actions/get-gke-credentials@v2'
         with:
           cluster_name: '${{ env.GKE_CLUSTER }}'
-          location: '${{ env.GKE_LOCATION }}'
+          location: '${{ env.GAR_LOCATION }}'
           project_id: '${{ env.PROJECT_ID }}'
 
       - name: 'Run YAML'
